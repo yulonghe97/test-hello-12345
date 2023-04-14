@@ -1,0 +1,16 @@
+name = "test-hello-12345"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "test-hello-12345_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "test-hello-12345.wasm"
+command = "npm run build:release"
